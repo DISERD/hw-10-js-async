@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>async-task3</title>
+    <link rel="stylesheet" href="./css/task3.css">
 </head>
+
 <body>
-    
+    <div class="game-wrapper">
+        <h1>Catch the Target</h1>
+        <div class="dashboard">
+            <p>Time: <span id="timer">10</span> sec</p>
+            <p>Score: <span id="score">0</span></p>
+        </div>
+        <button id="start-btn">Start Game</button>
+
+        <div id="game-field" class="game-field">
+            <div id="target" class="target hidden">Click!</div>
+        </div>
+    </div>
+
+    <script src="./js/03-task.js"></script>
 </body>
+
 </html>
