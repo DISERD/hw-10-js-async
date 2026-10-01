@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background: lightgray;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    width: 350px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input,
+button {
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    border: 1px solid grey;
+}
+
+input {
+    flex: 1;
+}
+
+button {
+    background: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input::selection {
+    background-color: purple;
+    color: white;
+}
+
+button:disabled {
+    background: lightgray;
+    cursor: not-allowed;
+}
+
+.status-display {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgrey;
+}
