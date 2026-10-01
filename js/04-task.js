@@ -7,13 +7,13 @@ const initTimerControl = function () {
     const seconds = parseInt(secondsInput.value);
 
     if (isNaN(seconds) || seconds <= 0) {
-      alert("Введіть коректну кількість секунд!");
+      alert("Please enter a valid number of seconds!");
       return;
     }
 
     startBtn.disabled = true;
     secondsInput.disabled = true;
-    statusDisplay.textContent = `Залишилось: ${seconds} сек.`;
+    statusDisplay.textContent = `Time left: ${seconds} sec.`;
 
     let timeLeft = seconds;
 
@@ -21,11 +21,11 @@ const initTimerControl = function () {
       timeLeft -= 1;
 
       if (timeLeft > 0) {
-        statusDisplay.textContent = `Залишилось: ${timeLeft} сек.`;
+        statusDisplay.textContent = `Time left: ${timeLeft} sec.`;
       } else {
         clearInterval(timerId);
-        statusDisplay.textContent = "Час вийшов!";
-        alert(`Минуло ${seconds} секунд!`);
+        statusDisplay.textContent = "Time is up!";
+        alert(`${seconds} seconds have passed!`);
 
         startBtn.disabled = false;
         secondsInput.disabled = false;
