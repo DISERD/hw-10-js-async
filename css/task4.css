@@ -27,11 +27,16 @@ button {
     padding: 10px;
     border-radius: 6px;
     font-size: 15px;
-    border: 1px solid grey;
+    border: 1px solid lightgray;
 }
 
 input {
     flex: 1;
+}
+
+input::selection {
+    background-color: purple;
+    color: white;
 }
 
 button {
@@ -39,11 +44,6 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-}
-
-input::selection {
-    background-color: purple;
-    color: white;
 }
 
 button:disabled {
@@ -55,5 +55,5 @@ button:disabled {
     margin-top: 25px;
     font-size: 18px;
     font-weight: bold;
-    color: darkgrey;
+    color: purple;
 }
