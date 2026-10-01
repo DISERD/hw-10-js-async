@@ -1,14 +1,13 @@
 const runIntervalTimer = function () {
   let count = 0;
-  const maxMessages = 5;
 
   const timerId = setInterval(function () {
-    count++;
+    count += 1;
     console.log(`Повідомлення #${count}`);
 
-    if (count >= maxMessages) {
+    if (count === 5) {
       clearInterval(timerId);
-      console.log("Інтервал зупинено після 5 повідомлень.");
+      console.log("Інтервал зупинено.");
     }
   }, 1000);
 };
